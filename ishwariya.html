@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ishwariya- PORTFOLIO</title>
+        <style>
+           body {
+               font-family: Times new roman ;
+               margin: 0;
+               padding: 0;
+               background-color: #FFFFFF;
+           }
+           
+           header {
+               background-color: #ec3232;
+               color: #0e0d0d;
+               text-align: center;
+               padding: 2rem 0;
+               position: relative;
+           }
+           
+           .header-content h1 {
+               font-size: 2.7 rem;
+           }
+          
+           
+           nav {
+               background-color: #000000;
+               color: #fff;
+               text-align: center;
+           }
+           
+           nav u1 {
+               list-style-type: none;
+               padding: 0;
+           }
+           
+           nav u1 li {
+               display:inline;
+               margin: 0 20px;
+           }
+           
+           nav u1 li a {
+               text-decoration: none;
+               color: #fff;
+           }
+           
+           .section-content {
+               background-color: #fff;
+               padding: 2rem;
+               margin: 1rem;
+               border-radius: 20px;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           }
+           
+           footer {
+               text-align: center;
+               padding: 1rem 0;
+               background-color: #000000;
+               color: #fff;
+           }
+           
+           u1 {
+               list-style-type: disc;
+               padding-left: 20px;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+            <h1>ISHWARIYA N</h1>
+            </div>
+        </header>
+        
+        <nav>
+            <u1>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills<a></li>
+                <li><a href="#contact">Contact<a></li>
+            </u1>
+        </nav>
+        
+        <section id="about">
+          <div class="section-content">
+          <h2>About me</h2> 
+          <h4>Hi Everyone! 
+              I am  Ishwariya</h4> 
+          <p>I am a final year student and I  am currently pursuing B.Sc Computer Science in Dr.URCW.</p>
+           </div> 
+        </section>
+        
+        <section id="education">
+           <div class="section-content">
+           <h2>Education</h2>
+           <h4>B.Sc Computer Science</h4>
+           <p>Dr.Umayal Ramanathan College for Women - Affiliated to Alagappa University </p>
+        </div>
+        </section>
+        
+        <section id="skills">
+           <div class="section-content">
+           <h2>Skills</h2>
+           <h4>Technical Skills</h4>
+               <li>Programming Languages : C, C++, Java, Python</li>
+               <li>Framework                         : ASP.NET</li>
+               <li>Web Technologies             : HTML, CSS</li>
+               <li>Application suite                : MS Office</li>
+              <li>Database Languages         : Oracle</li>
+              <li>Designing tool                    : Canva</li>
+           </div>
+           </section>
+           
+
+           <section id="contact">
+           <div class="section-content">
+           <h2>Contact </h2>
+           <p>Name       : Ishwariya</p> 
+           <p>Phone no : 7845981457 </p>
+           <p>Email id   : ishwariya21urcwcs@gmail.com</p>  
+           </div>   
+           </section>
+           
+
+     
+
+           <footer>
+               <p>&copy; 2023  ishwariya</p>
+           </footer>
+           
+           <script>
+               document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                   anchor.addEventListener('click',function(e) {
+                       e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if(targetElement){
+    window.scrollTo({
+      top:targetElement.offsetTop, 
+      behavior:'smooth'
+      });
+    }
+ });
+});
+          </script>
+    </body>
+    </html>
